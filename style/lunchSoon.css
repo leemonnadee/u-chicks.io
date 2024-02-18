@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)); /* White to transparent */
+}
+nav .active-link {
+  color: rgb(252, 207, 7); /* You can change this color to whatever you prefer */
+  font-weight: bold;
+  font-size: large;
+}
+
+#soon {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FA;
+}
+#soon .containerOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 50%;
+}
+#soon .containerTwo span {
+  width: 100%;
+}
+#soon .card {
+  background-color: #F8F9FA;
+  border: none;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 5px;
+  gap: 20px;
+  /* for all social containers*/
+  /* instagram*/
+  /* twitter*/
+  /* linkdin*/
+  /* Whatsapp*/
+}
+#soon .card .socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+#soon .card .containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+#soon .card .containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+#soon .card .containerThree:hover {
+  background-color: #564f4f;
+  transition-duration: 0.3s;
+}
+#soon .card .containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: 0.3s;
+}
+#soon .card .socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+#soon .card .socialSvg {
+  width: 17px;
+}
+#soon .card .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+#soon .card .socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=lunchSoon.css.map */

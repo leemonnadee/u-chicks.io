@@ -1,0 +1,676 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    background: #2C2A27;
+    margin: 0%;
+    padding: 0%;
+    color: #E68611;
+    
+}
+section{
+
+    width: 100%;
+    height: 100vh;
+ 
+   #contactUsFrame{
+ 
+             border-radius: 5px;
+           
+   }
+}
+#home .container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 2, 0, 0.7); /* Adjust the opacity here */
+    z-index: -1; /* Ensure the overlay is above the background */
+}
+
+#home{
+    background-image: url(../src/Empire_Chicken_Tenders.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Make sure the container is positioned relative */
+    z-index: 0; /* Ensure the background is behind the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  overflow: hidden;
+
+    .container {
+       z-index: 999;
+    }
+}
+
+nav{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* White to transparent */
+    .active-link {
+  
+        color: rgb(252, 207, 7); /* You can change this color to whatever you prefer */
+        font-weight: bold;
+        font-size:large;
+    }
+}
+#contactTitle{
+    animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s ;
+    --animate-repeat: 2;
+ 
+}
+.maincontainer {
+    height: 250px; /* Set the height of the container */
+    width: 500px; /* Optionally, set the width of the container */
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    img {
+        height: 100%; /* Make the image take up 100% of the container's height */
+        width: 100%; /* Make the image take up 100% of the container's width */
+        object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    }
+}
+.container-fluid{
+    .container{
+        #contactUsFrame{
+        width: 100%;
+     
+    }
+    }
+
+}
+#Products{
+
+    #carouselProduct{
+        height:100%;
+        width: 100%;
+       
+        .carousel-item{
+            height: 100%;
+            width: 100%;
+        .carousel-caption{
+         
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            flex-direction: column;
+            padding: 10px;
+            width: 50%;
+            ul{
+                text-align: left;
+            }
+        }
+            img{
+                height: 100vh;
+                width: 100%;
+                object-position: center;
+                object-fit: cover;
+                opacity: calc(0.2);
+                background-color: rgba(0, 0, 0);
+            }
+        }
+    
+        
+    }
+}
+
+//pricing css
+#pricing{
+   height: auto;
+    background-image: url(../src/thirdpic.jpg);
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(36, 39, 1,0.8);
+    .col{
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+.card {
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+
+.card::after {
+  content: "Add to Cart";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #00AC7C;
+  color: #fff;
+  height: 2.5em;
+  width: 90%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  img{
+   height:80%;
+   width: 90%;
+   border-radius: 5%;
+  }
+}.card {
+    position: relative;
+    width: 14.875em;
+    height: 19.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  
+  .card::after {    
+    content: "Order Now";
+    padding-top: 0.25em;
+    padding-left: 2.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #e7b112;
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  .card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    text-align: start;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #7f0c0c;
+  }
+  
+  .card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  .card:active::after {
+    content: "Soon!";
+    height: 3.125em;
+  }
+  
+  .text {
+    max-width: 55px;
+  }
+  
+ 
+
+
+}
+#aboutUs{
+    height: auto;
+    #aboutUsMain{
+     
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        max-width: 100%;
+        height: fit-content;
+        .container{
+          
+            height: fit-content;
+            width: 700px;
+         
+        }
+  
+        .container:nth-child(1){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 10px;
+           text-align: start;
+            .main {
+                display: grid;
+                place-items: center;
+                width: 190px;
+                height: 254px;
+              }
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .card {
+                width: 190px;
+                height: 300px;
+                background: #FAF1F6;
+                padding: 2rem 1.5rem;
+                transition: box-shadow .3s ease, transform .2s ease;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+              }
+              
+              .card-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              .card-avatar {
+                background: radial-gradient(#A8A6B6,#B3B1BF,#BDBBC7,#C5C4CE,#E2E2E7);
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                transition: transform .2s ease;
+                img{
+                    height: 100px;
+                    width: 100px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+              
+              }
+              
+              .card-avatar svg {
+                padding-top: 5px;
+                height: 80px;
+                width: 100px;
+                fill: #515F65;
+              }
+              
+              .card-social  {
+                display: flex;
+                justify-content: center;
+                width: 190px;
+                margin-top: 10%;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+              }
+              
+              .card-social-icon {
+                list-style: none;
+            
+                color: #414102;
+                font-size: 0.5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              
+              .card-social-icon i {
+                display: block;
+                height: 20px;
+                width: 20px;
+                fill: #dadee0;
+                cursor: pointer;
+              }
+              
+              .card-title {
+                color: #1b1b1b;
+                font-size: 1.5em;
+                font-weight: 600;
+                line-height: 2rem;
+                margin-top: 5px;
+              }
+              
+              .card-subtitle {
+                color: #7e93a0;
+                font-size: 1.0em;
+              }
+              
+              .address-icon {
+                fill: #515F65;
+                height: 150px;
+                width: 100px;
+                list-style: none;
+                justify-content: space-around;
+              }
+              
+              .address-title {
+                color: #333;
+                font-size: 1.0em;
+                font-weight: 600;
+                list-style: none;
+              }
+              
+              .address {
+                color: #859ba8;
+                font-size: 0.8em;
+                list-style: none;
+                padding-left: 20px;
+                ;
+              }
+              
+              .contact-title {
+                color: #333;
+                font-size: 1.5em;
+                font-weight: 600;
+                margin-top: 45%;
+                padding-bottom: 5px;
+              }
+              
+              .card-contact {
+                color: #859ba8;
+                font-size: 0.8em;
+              }
+              
+              .icon-contact {
+                list-style: none;
+                display: flex;
+                align-items: center;
+              }
+              
+              .icon-contact svg {
+                display: block;
+                height: 18px;
+                width: 18px;
+                fill: #515F65;
+                padding-right: 5px;
+              }
+              
+              .card:hover {
+                box-shadow: 0 10px 50px #23232333;
+          
+              
+              }
+              
+              .card:hover .card-info {
+                transform: translateY(-5%);
+              }
+              
+              .card-avatar:hover {
+                transform: scale(1.1);
+              }
+              
+              #cs1:hover {
+                transform: scale(2.0);
+              }
+              
+              #cs2:hover {
+                transform: scale(2.0);
+              }
+              
+              #cs3:hover {
+                transform: scale(2.0);
+              }
+              
+              .main:hover #c1 {
+                transform: translateX(0px);
+              }
+              
+              .main:hover #c2 {
+                transform: translateX(200px);
+              }
+              
+              .main:hover #c3 {
+                transform: translateX(-200px);
+              }
+        }
+   
+    }
+    #faq::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(6, 2, 0, 0.7); /* Adjust the opacity here */
+        z-index: -1; /* Ensure the overlay is above the background */
+    }
+    #faq{
+   
+        width: 100%;
+        background-image: url("../src/skewee.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative; /* Make sure the container is positioned relative */
+        z-index: 0; /* Ensure the background is behind the overlay */
+      
+      overflow: hidden;
+    }
+}
+.review-card {
+    margin-bottom: 20px;
+  }
+  .carouselSample .review-card:hover{
+   background-color: #C69F2B;
+   color: whitesmoke;
+   transition: 1s all ease-in;
+   i{
+    color: green;
+   }
+  }
+#contactPage{
+ 
+
+    .container:nth-child(1){
+        width: 50%;
+   
+    
+    }
+    .container:nth-child(2){
+        width: 50%;
+      
+    }
+}
+.aboutLogo{
+    .card {
+        position: relative;
+        width: 300px;
+        height: 230px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+      
+      .card img {
+       height: fit-content;
+       width: 100%;
+        fill: #e3e3e3;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+      
+      .card:hover {
+        transform: rotate(-5deg) scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .card__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        opacity: 0;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+      
+      .card:hover .card__content {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 1;
+      }
+      
+      .card__title {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+      }
+      
+      .card__description {
+        margin: 10px 0 0;
+        font-size: 14px;
+        color: #777;
+        line-height: 1.4;
+      }
+      
+      .card:hover img {
+        scale: 0;
+        transform: rotate(-45deg);
+      }
+      
+}
+#footerSoc{
+    a{
+        text-decoration: none;
+        color:#FAC826 ;
+        font-weight: 600;
+    }
+    a:hover{
+        color: white;
+        transition: 1s all ease;
+    }
+}
+//responsive
+@media screen and (max-width: 756px) {
+    /* Your CSS rules for screens with a width of 756 pixels or smaller */
+    /* Example rule: */
+    body {
+        font-size: 14px;
+    }
+    img{
+        height: 250px;
+        width: 250px;
+     }
+     section{
+
+
+        .container-fluid{
+            .container{
+                width: fit-content;
+               
+            }
+        
+        
+        }
+        
+     }
+     #contact{
+        height: fit-content;
+        flex-direction: column;
+        .container-fluid{
+            height:fit-content;
+       
+      
+            flex-direction: column;
+     
+        }
+     
+        iframe{
+            margin-top: 50px;
+           height: auto;
+           width: auto;
+           
+           
+        }
+    
+
+    }
+    #contactPage{
+        flex-direction: column;
+    }
+
+
+     
+}

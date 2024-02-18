@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+nav{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* White to transparent */
+    .active-link {
+  
+        color: rgb(252, 207, 7); /* You can change this color to whatever you prefer */
+        font-weight: bold;
+        font-size:large;
+    }
+}
+#soon{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+
+   
+.containerOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 50%;
+}
+.containerTwo{
+    span{
+        width: 100%;
+    }
+}
+    .card{  
+        background-color: #F8F9FA;
+        border: none;
+      
+            width: 100%;
+            height: fit-content;
+         
+            display: flex;
+            align-items: start;
+            justify-content:center;
+            flex-direction: row; 
+    
+        padding-top: 5px;
+            gap: 20px;
+        
+          
+          
+          /* for all social containers*/
+          .socialContainer {
+            width: 52px;
+            height: 52px;
+            background-color: rgb(44, 44, 44);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            transition-duration: .3s;
+          }
+          /* instagram*/
+          .containerOne:hover {
+            background-color: #d62976;
+            transition-duration: .3s;
+          }
+          /* twitter*/
+          .containerTwo:hover {
+            background-color: #00acee;
+            transition-duration: .3s;
+          }
+          /* linkdin*/
+          .containerThree:hover {
+            background-color: #564f4f;
+            transition-duration: .3s;
+        
+      
+          }
+          /* Whatsapp*/
+          .containerFour:hover {
+            background-color: #128C7E;
+            transition-duration: .3s;
+          }
+          
+          .socialContainer:active {
+            transform: scale(0.9);
+            transition-duration: .3s;
+          }
+          
+          .socialSvg {
+            width: 17px;
+          }
+          
+          .socialSvg path {
+            fill: rgb(255, 255, 255);
+          }
+          
+          .socialContainer:hover .socialSvg {
+            animation: slide-in-top 0.3s both;
+          }
+          
+          @keyframes slide-in-top {
+            0% {
+              transform: translateY(-50px);
+              opacity: 0;
+            }
+          
+            100% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          
+          
+    }
+}
